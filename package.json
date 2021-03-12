@@ -1,0 +1,48 @@
+{
+  "name": "ts-template-repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "files": [],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "test": "jest"
+  },
+  "husky": {
+    "hooks": {}
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "bin": "",
+  "keywords": [],
+  "author": {
+    "name": "Volodymyr Yepishev",
+    "email": "yepishevv@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bwca/ts-template-repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bwca/ts-template-repo/issues"
+  },
+  "homepage": "https://github.com/Bwca/ts-template-repo#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.2",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "eslint": "^7.0.0",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "2.0.5",
+    "terser": "^4.6.13",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.9.2"
+  }
+}
