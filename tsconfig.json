@@ -17,6 +17,6 @@
     "allowJs": true,
     "sourceMap": false
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "src/test/user.model.ts"],
   "exclude": ["src/**/*.test.ts", "src/**/*__test__"]
 }

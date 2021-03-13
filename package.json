@@ -1,24 +1,26 @@
 {
-  "name": "ts-template-repo",
+  "name": "property-string-path",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "files": [],
+  "description": "Generate type safe dot paths to object properties based on an interface.",
+  "main": "./dist/index.js",
+  "files": [
+    "dist/**"
+  ],
   "scripts": {
-    "build": "tsc",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
-    "test": "jest"
+    "build": "tsup src/index.ts --minify --dts",
+    "dev": "nodemon",
+    "lint": "eslint */**/*.{ts,js} --quiet --fix"
   },
-  "husky": {
-    "hooks": {}
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx}": [
-      "eslint --fix"
-    ]
-  },
-  "bin": "",
-  "keywords": [],
+  "keywords": [
+    "object",
+    "property",
+    "dot",
+    "path",
+    "string",
+    "key",
+    "nested",
+    "prop"
+  ],
   "author": {
     "name": "Volodymyr Yepishev",
     "email": "yepishevv@gmail.com"
@@ -26,23 +28,19 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bwca/ts-template-repo.git"
+    "url": "git+https://github.com/Bwca/property-string-path.git"
   },
   "bugs": {
-    "url": "https://github.com/Bwca/ts-template-repo/issues"
+    "url": "https://github.com/Bwca/property-string-path/issues"
   },
-  "homepage": "https://github.com/Bwca/ts-template-repo#readme",
+  "homepage": "https://github.com/Bwca/property-string-path#readme",
   "devDependencies": {
-    "@types/jest": "^25.2.2",
-    "@typescript-eslint/eslint-plugin": "^2.33.0",
-    "@typescript-eslint/parser": "^2.33.0",
-    "eslint": "^7.0.0",
-    "husky": "^4.2.5",
-    "jest": "^26.0.1",
-    "parcel-bundler": "^1.12.4",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "eslint": "^7.21.0",
+    "nodemon": "^2.0.7",
     "prettier": "2.0.5",
-    "terser": "^4.6.13",
-    "ts-jest": "^26.0.0",
-    "typescript": "^3.9.2"
+    "tsup": "^4.6.1",
+    "typescript": "^4.2.3"
   }
 }
