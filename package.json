@@ -1,6 +1,6 @@
 {
   "name": "property-string-path",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Generate type safe dot paths to object properties based on an interface.",
   "main": "./dist/index.js",
   "files": [
@@ -23,7 +23,7 @@
   ],
   "author": {
     "name": "Volodymyr Yepishev",
-    "email": "yepishevv@gmail.com"
+    "email": "i.m.bwca@gmail.com"
   },
   "license": "MIT",
   "repository": {

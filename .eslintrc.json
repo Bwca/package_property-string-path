@@ -17,8 +17,8 @@
   "plugins": ["@typescript-eslint"],
   "rules": {
     "no-unused-vars": "off",
-    "indent": ["error", "tab"],
-    "linebreak-style": ["error", "unix"],
+    "indent": "off",
+    "linebreak-style": "off",
     "quotes": ["error", "single"],
     "semi": ["error", "always"]
   }
